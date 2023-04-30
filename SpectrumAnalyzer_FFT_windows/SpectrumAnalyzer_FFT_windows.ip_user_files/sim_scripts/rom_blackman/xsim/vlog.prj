@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/rom_blackman/sim/rom_blackman.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

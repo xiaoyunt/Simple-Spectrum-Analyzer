@@ -1,0 +1,2 @@
+c_addsub_0.vhd,vhdl,xil_defaultlib,../../../../SpectrumAnzlyzer_16384FFT.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

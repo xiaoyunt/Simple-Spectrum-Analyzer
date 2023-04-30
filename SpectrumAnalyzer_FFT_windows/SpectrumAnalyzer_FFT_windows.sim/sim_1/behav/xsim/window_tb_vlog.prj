@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ipshared/979d/hdl/verilog" --include "../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" --include "../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" --include "../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ipshared/58e2/hdl" --include "T:/AdvanceSoftwares/Xilinx2018/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/rom_win/sim/rom_win.v" \
+"../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/new/window.v" \
+"../../../../SpectrumAnalyzer_FFT_windows.srcs/sim_1/new/window_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

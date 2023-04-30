@@ -1,0 +1,2 @@
+dds_compiler_0.vhd,vhdl,xil_defaultlib,../../../../SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../SpectrumAnzlyzer_16384FFT.srcs/sources_1/ip/mult_gen_1/sim/mult_gen_1.vhd" \
+
+nosort

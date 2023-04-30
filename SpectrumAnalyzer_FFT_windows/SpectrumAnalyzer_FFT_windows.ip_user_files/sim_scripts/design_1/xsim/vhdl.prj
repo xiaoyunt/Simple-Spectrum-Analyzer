@@ -1,0 +1,23 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_smc1_0/bd_0/ip/ip_1/sim/bd_68a3_psr_aclk_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_250M_0/sim/design_1_rst_ps7_0_250M_0.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/9097/src/axi_dynclk_S00_AXI.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/9097/src/axi_dynclk.vhd" \
+"../../../bd/design_1/ip/design_1_axi_dynclk_0_2/sim/design_1_axi_dynclk_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_1/sim/bd_6e42_psr_aclk_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_vdma_0_2/sim/design_1_axi_vdma_0_2.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/5c79/src/ClockGen.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/5c79/src/SyncAsync.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/5c79/src/SyncAsyncReset.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/5c79/src/DVI_Constants.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/5c79/src/OutputSERDES.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/5c79/src/TMDS_Encoder.vhd" \
+"../../../../SpectrumAnalyzer4.srcs/sources_1/bd/design_1/ipshared/5c79/src/rgb2dvi.vhd" \
+"../../../bd/design_1/ip/design_1_rgb2dvi_0_2/sim/design_1_rgb2dvi_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_2/sim/design_1_rst_ps7_0_100M_2.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_142M_2/sim/design_1_rst_ps7_0_142M_2.vhd" \
+"../../../bd/design_1/ip/design_1_v_tc_0_2/sim/design_1_v_tc_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+
+nosort

@@ -1,0 +1,1185 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 23 21:39:31 2022
+# Process ID: 22040
+# Current directory: L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1
+# Command line: vivado.exe -log design_1_direct_fft_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_direct_fft_0_0.tcl
+# Log file: L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1/design_1_direct_fft_0_0.vds
+# Journal file: L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_direct_fft_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'l:/PersonalProjects/Xilinx/ip_repo/PL_IOcontrol/PL_IOcontrol_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'l:/PersonalProjects/Xilinx/SpectrumAnalyzer4/ip_repo/direct_fft_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'l:/PersonalProjects/Xilinx/SpecialSources'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'T:/AdvanceSoftwares/Xilinx2018/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.cache/ip 
+Command: synth_design -top design_1_direct_fft_0_0 -part xc7z035ffg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23388 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 380.430 ; gain = 109.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_direct_fft_0_0' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ip/design_1_direct_fft_0_0/synth/design_1_direct_fft_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'direct_fft' [L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/new/direct_fft.v:23]
+INFO: [Synth 8-638] synthesizing module 'floating_multiply' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/floating_multiply/synth/floating_multiply.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/floating_add/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/floating_multiply/synth/floating_multiply.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'floating_multiply' (21#1) [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/floating_multiply/synth/floating_multiply.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'floating_add' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/floating_add/synth/floating_add.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 12 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/floating_add/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/floating_add/synth/floating_add.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'floating_add' (32#1) [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/floating_add/synth/floating_add.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_1' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/fifo_generator_1/synth/fifo_generator_1.vhd:73]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 32 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 1 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 4kx9 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 4094 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 4093 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_RD_DEPTH bound to: 4096 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 12 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_DEPTH bound to: 4096 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_3' declared at 'l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/fifo_generator_1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38578' bound to instance 'U0' of component 'fifo_generator_v13_2_3' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/fifo_generator_1/synth/fifo_generator_1.vhd:542]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_1' (58#1) [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/fifo_generator_1/synth/fifo_generator_1.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'xfft_1' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/xfft_1/synth/xfft_1.vhd:83]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_STATUS_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_NFFT_MAX bound to: 13 - type: integer 
+	Parameter C_ARCH bound to: 3 - type: integer 
+	Parameter C_HAS_NFFT bound to: 0 - type: integer 
+	Parameter C_USE_FLT_PT bound to: 1 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_TWIDDLE_WIDTH bound to: 24 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_SCALING bound to: 1 - type: integer 
+	Parameter C_HAS_BFP bound to: 0 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_OVFLO bound to: 0 - type: integer 
+	Parameter C_HAS_NATURAL_INPUT bound to: 1 - type: integer 
+	Parameter C_HAS_NATURAL_OUTPUT bound to: 1 - type: integer 
+	Parameter C_HAS_CYCLIC_PREFIX bound to: 0 - type: integer 
+	Parameter C_HAS_XK_INDEX bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_TWIDDLE_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BRAM_STAGES bound to: 6 - type: integer 
+	Parameter C_REORDER_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_USE_HYBRID_RAM bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter C_CMPY_TYPE bound to: 1 - type: integer 
+	Parameter C_BFLY_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xfft_v9_1_1' declared at 'l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/xfft_1/hdl/xfft_v9_1_vh_rfs.vhd:102725' bound to instance 'U0' of component 'xfft_v9_1_1' [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/xfft_1/synth/xfft_1.vhd:189]
+WARNING: [Synth 8-5858] RAM adel30_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM bdel_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM sub_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM adel30_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM bdel_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM sub_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM adel30_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM bdel_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM sub_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'xfft_1' (136#1) [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/xfft_1/synth/xfft_1.vhd:83]
+WARNING: [Synth 8-350] instance 'xfft_fft1' of module 'xfft_1' requires 19 connections, but only 13 given [L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/new/direct_fft.v:218]
+INFO: [Synth 8-6155] done synthesizing module 'direct_fft' (137#1) [L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/new/direct_fft.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_direct_fft_0_0' (138#1) [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ip/design_1_direct_fft_0_0/synth/design_1_direct_fft_0_0.v:58]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[4]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[3]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[2]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[1]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[0]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port aset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port sset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port sinit
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[15]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[14]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[13]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[12]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[11]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[10]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[9]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[8]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[7]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[6]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[5]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[4]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[3]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[2]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[1]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port D[0]
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized117 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design fp_shift_ram_clr_op has unconnected port SCLR_BLANK
+WARNING: [Synth 8-3331] design fp_shift_ram_clr_op has unconnected port EXTRA_CLR
+WARNING: [Synth 8-3331] design fp_shift_ram_clr_op has unconnected port EXTRA_CLR_BLANK
+WARNING: [Synth 8-3331] design shift_ram__parameterized112 has unconnected port D1
+WARNING: [Synth 8-3331] design shift_ram__parameterized112 has unconnected port CLK
+WARNING: [Synth 8-3331] design shift_ram__parameterized112 has unconnected port CE
+WARNING: [Synth 8-3331] design shift_ram__parameterized112 has unconnected port SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized112 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized112 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design r22_memory__parameterized9 has unconnected port depthx2
+WARNING: [Synth 8-3331] design shift_ram__parameterized111 has unconnected port D1
+WARNING: [Synth 8-3331] design shift_ram__parameterized111 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized111 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port a[3]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port a[2]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port a[1]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port a[0]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port aset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port sset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized26 has unconnected port sinit
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[15]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[14]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[13]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[12]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[11]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[10]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[9]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[8]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[7]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[6]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[5]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[4]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[3]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[2]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[1]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port D[0]
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized110 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design shift_ram__parameterized118 has unconnected port D1
+WARNING: [Synth 8-3331] design shift_ram__parameterized118 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized118 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design fp_shift_ram_clr_op__parameterized0 has unconnected port SCLR_BLANK
+WARNING: [Synth 8-3331] design fp_shift_ram_clr_op__parameterized0 has unconnected port EXTRA_CLR
+WARNING: [Synth 8-3331] design fp_shift_ram_clr_op__parameterized0 has unconnected port EXTRA_CLR_BLANK
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port a[4]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port a[3]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port a[2]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port a[1]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port a[0]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port aset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port sset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized25 has unconnected port sinit
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[15]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[14]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[13]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[12]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[11]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[10]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[9]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[8]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[7]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[6]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[5]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[4]
+WARNING: [Synth 8-3331] design shift_ram__parameterized114 has unconnected port D[3]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:48 ; elapsed = 00:05:04 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:50 ; elapsed = 00:05:06 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:50 ; elapsed = 00:05:06 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'dist_ram.lutram.mem' of module 'dist_mem'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+INFO: [Netlist 29-17] Analyzing 6069 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ip/design_1_direct_fft_0_0/design_1_direct_fft_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/bd/design_1/ip/design_1_direct_fft_0_0/design_1_direct_fft_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'inst/fifo_f1/U0'
+Finished Parsing XDC File [l:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'inst/fifo_f1/U0'
+Parsing XDC File [L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_direct_fft_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_direct_fft_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3099.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3099.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 654 instances were transformed.
+  FD => FDRE: 6 instances
+  FDE => FDRE: 498 instances
+  FDR => FDRE: 50 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 10 instances
+  RAMB18 => RAMB18E1: 90 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3099.824 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.326 . Memory (MB): peak = 3099.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:05:13 ; elapsed = 00:05:28 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:13 ; elapsed = 00:05:28 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/fifo_f1/U0. (constraint file  L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1/dont_touch.xdc, line 24).
+Applied set_property DONT_TOUCH = true for inst/xfft_fft1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fifo_f1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/floating_add_abs1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/imaginary_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/real_2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:13 ; elapsed = 00:05:28 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "reading_last_symbol" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "event_tlast_unexpected" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5547] Trying to map ROM "quarter_sin_table" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "quarter_sin_table" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5544] ROM "empty_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5547] Trying to map ROM "quarter_sin_table" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "quarter_sin_table" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "half_sincos_table" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "half_sincos_table" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "first_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "second_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "first_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "second_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "first_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "second_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:29 ; elapsed = 00:05:45 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'floating_multiply:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized6) to 'floating_multiply:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'floating_multiply:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized6) to 'floating_multiply:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'floating_multiply:/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (floating_point_v7_1_7_delay__parameterized6) to 'floating_multiply:/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'floating_multiply:/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (floating_point_v7_1_7_delay__parameterized6) to 'floating_multiply:/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'floating_multiply:/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (floating_point_v7_1_7_delay__parameterized9) to 'floating_multiply:/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'floating_multiply:/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (floating_point_v7_1_7_delay__parameterized9) to 'floating_multiply:/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/floating_add_abs1/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized6) to 'inst/floating_add_abs1/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/floating_add_abs1/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized6) to 'inst/floating_add_abs1/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_block_fp:/fpo/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_block_fp:/fpo/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_block_fp:/fpo/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_block_fp:/fpo/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[6].natural_order_input.PE/SR2' (shift_ram__parameterized97) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[6].natural_order_input.PE/SR3'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6040] Register sin_addr_2s_comp/use_output_reg.D_OUT_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register cos_addr_2s_comp/use_output_reg.D_OUT_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6040] Register sin_addr_2s_comp/use_output_reg.D_OUT_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register cos_addr_2s_comp/use_output_reg.D_OUT_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "axi_wrapper/reading_last_symbol" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'inst/floating_add_abs1/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'inst/floating_add_abs1/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/floating_add_abs1/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]' (FDE) to 'inst/floating_add_abs1/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/floating_add_abs1/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'inst/floating_add_abs1/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/floating_add_abs1/U0/i_synth/\ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv__parameterized1.
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[7]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[7]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[3]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[3]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[5]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[4]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[3]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[2]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[1]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[10]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[9]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[8]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[7]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[6]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/SINE_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/COSINE_reg[24] )
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[5]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[4]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[3]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[2]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[1]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[8]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[7]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/theta_i_reg[6]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/pos_addr_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/SINE_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/COSINE_reg[24] )
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\lut_rom.q1_read_reg[23] )
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[24]' (FDRE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\SINE_reg[24] )
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][1]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][2]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][3]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][4]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][5]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][6]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][7]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][8]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][8]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][9]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][10]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][10]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][11]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][11]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][12]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[2]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[4]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[4]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\lut_rom.q1_read_reg[23] )
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[24]' (FDRE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\SINE_reg[24] )
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][1]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][2]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][3]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][4]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][5]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][6]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][7]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][8]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][8]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][9]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][10]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][10]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][11]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][11]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][12]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][13]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][13]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][14]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/use_fabric_adder.reg_c_high/dN.std_srl.shift_reg_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[0]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[1]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[1]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[2]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[2]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[3]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[3]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[4]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[4]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[5]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[5]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[6]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[6]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[7]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[7]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[8]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[8]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[9]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[9]' (FDE) to 'inst/xfft_fft1/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\lut_rom.q1_read_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\SINE_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/reset_delays[0].first.reset_del_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\axi_wrapper/reset_pipe_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\axi_wrapper/gen_nrt_events.event_status_channel_halt_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\SINE_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/reset_delays[1].other.reset_del_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\axi_wrapper/current_state_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\axi_wrapper/reset_pipe_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/reset_delays[2].other.reset_del_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\axi_wrapper/sclr_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\axi_wrapper/current_state_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/reset_delays[3].other.reset_del_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/reset_delays[4].other.reset_del_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/reset_delays[5].other.reset_del_reg[5] )
+INFO: [Synth 8-3332] Sequential element (FLT_TO_FIX_OP.SPD.OP/COND_DET/MANT_CARRY.MANT_ALL_ZERO_DET/CARRY_ZERO_DET/CHAIN_GEN[3].CARRYS_DEL.NEED_DEL.CARRYS_FD) is unused and will be removed from module floating_point_v7_0_15_viv__1.
+INFO: [Synth 8-3332] Sequential element (FLT_TO_FIX_OP.SPD.OP/COND_DET/MANT_CARRY.MANT_ALL_ZERO_DET/CARRY_ZERO_DET/CHAIN_GEN[3].CARRYS_DEL.NEED_DEL.CARRYS_FD) is unused and will be removed from module floating_point_v7_0_15_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[5].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[5].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[3].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[6].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[6].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.busy_gen/proc_start_delay/need_sclr_lut.real_shift_ram.FF_gen[0].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/optionally_negate_inputs/apply_negation.registered_twos_comp_hblknm.gen_full_slices[0].gen_fdre[0].ff_br )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/optionally_negate_inputs/apply_negation.registered_twos_comp_hblknm.gen_full_slices[0].gen_fdre[0].ff_bi )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_b.mult3/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_b.mult1/mult/use_prim.iAdelx[0].iAdely[0].use_delay_line.Adelay/dN.std_srl.shift_reg_reg[4][0] )
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/optionally_negate_inputs/apply_negation.registered_twos_comp_hblknm.gen_full_slices[0].gen_fdre[0].ff_br) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/optionally_negate_inputs/apply_negation.registered_twos_comp_hblknm.gen_full_slices[0].gen_fdre[0].ff_bi) is unused and will be removed from module xfft_v9_1_1_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:55 ; elapsed = 00:06:11 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_0/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/sin_pre_read_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_0/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/sin_pre_read_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_1/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/cos_pre_read_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_1/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/cos_pre_read_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_3/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/sin_pre_read_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_3/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/sin_pre_read_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_4/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/cos_pre_read_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_4/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw1.twgen1/cos_pre_read_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_6/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw0.twgen0/sin_pre_read_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_6/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw0.twgen0/sin_pre_read_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_7/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw0.twgen0/cos_pre_read_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/xfft_fft1/U0/i_synth/i_7/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw0.twgen0/cos_pre_read_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:07 ; elapsed = 00:06:23 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/fabric_adder_2.registered_preadder.mult2_preadd_sum_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/xfft_fft1/U0/i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[5].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/three_mult_structure.use_dsp.i_dsp48/mult2_preadder_d_plus_b.mult2/mult/use_prim.iBdelx[1].iBdely[0].need_delay_line.Bdelay/d1.dout_i_reg[0] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:13 ; elapsed = 00:06:30 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:20 ; elapsed = 00:06:37 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/merged_sub_mux.mux_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] is being inverted and renamed to ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/merged_sub_mux.mux_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]_inv.
+INFO: [Synth 8-5778] max_fanout handling on net ce_w2c is sub-optimal because some of its loads are not in same hierarchy as its driver   
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:22 ; elapsed = 00:06:38 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:22 ; elapsed = 00:06:38 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:24 ; elapsed = 00:06:41 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:24 ; elapsed = 00:06:41 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:24 ; elapsed = 00:06:41 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:24 ; elapsed = 00:06:41 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   173|
+|2     |DSP48E1    |     2|
+|3     |DSP48E1_1  |     2|
+|4     |DSP48E1_10 |     3|
+|5     |DSP48E1_11 |     3|
+|6     |DSP48E1_12 |     3|
+|7     |DSP48E1_2  |     1|
+|8     |DSP48E1_3  |     1|
+|9     |DSP48E1_4  |     6|
+|10    |DSP48E1_5  |     6|
+|11    |DSP48E1_6  |     6|
+|12    |DSP48E1_7  |     6|
+|13    |DSP48E1_8  |     6|
+|14    |DSP48E1_9  |    15|
+|15    |LUT1       |   184|
+|16    |LUT2       |  2053|
+|17    |LUT3       |  3275|
+|18    |LUT4       |   705|
+|19    |LUT5       |   283|
+|20    |LUT6       |   754|
+|21    |MUXCY      |  2776|
+|22    |MUXF7      |     4|
+|23    |MUXF8      |     2|
+|24    |RAM64X1D   |    10|
+|25    |RAMB18     |    90|
+|26    |RAMB18E1_2 |     6|
+|27    |RAMB18E1_4 |     1|
+|28    |RAMB18E1_5 |     2|
+|29    |RAMB18E1_6 |     2|
+|30    |RAMB36E1   |     4|
+|31    |RAMB36E1_2 |     1|
+|32    |SRL16E     |  2712|
+|33    |SRLC32E    |   232|
+|34    |XORCY      |  2530|
+|35    |FD         |     6|
+|36    |FDCE       |    72|
+|37    |FDE        |   496|
+|38    |FDR        |    49|
+|39    |FDRE       | 11751|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:24 ; elapsed = 00:06:41 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3044 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:06:22 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+Synthesis Optimization Complete : Time (s): cpu = 00:06:25 ; elapsed = 00:06:41 . Memory (MB): peak = 3099.824 ; gain = 2829.246
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'dist_ram.lutram.mem' of module 'dist_mem'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+INFO: [Netlist 29-17] Analyzing 6212 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3099.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1441 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 790 instances
+  FD => FDRE: 6 instances
+  FDE => FDRE: 496 instances
+  FDR => FDRE: 49 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 10 instances
+  RAMB18 => RAMB18E1: 90 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+384 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:34 ; elapsed = 00:06:52 . Memory (MB): peak = 3099.824 ; gain = 2832.535
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3099.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1/design_1_direct_fft_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 1576 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3099.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'L:/PersonalProjects/Xilinx/SpectrumAnalyzer_FFT_windows/SpectrumAnalyzer_FFT_windows.runs/design_1_direct_fft_0_0_synth_1/design_1_direct_fft_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_direct_fft_0_0_utilization_synth.rpt -pb design_1_direct_fft_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 21:46:43 2022...

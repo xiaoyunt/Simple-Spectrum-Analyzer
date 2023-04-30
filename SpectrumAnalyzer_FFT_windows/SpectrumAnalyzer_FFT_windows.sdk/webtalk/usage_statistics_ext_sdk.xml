@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<webTalkData  fileName='usage_statistics_ext_sdk.xml'  majorVersion='1' minorVersion='0' timeStamp='Sat Nov 19 11:33:46 2022'>
+<section name="__ROOT__" level="0" order="1" description="">
+ <section name="software_version_and_target_device" level="1" order="1" description="">
+  <keyValuePair key="beta" value="false" description="" />
+  <keyValuePair key="build_version" value="2018.3" description="" />
+  <keyValuePair key="date_generated" value="2022-11-19 11:33:45" description="" />
+  <keyValuePair key="os_platform" value="amd64" description="" />
+  <keyValuePair key="product_version" value="SDK v2018.3" description="" />
+  <keyValuePair key="project_id" value="2018.3_44" description="" />
+  <keyValuePair key="project_iteration" value="44" description="" />
+  <keyValuePair key="random_id" value="7ijugepou1fn8n258h9rmnre2p" description="" />
+  <keyValuePair key="registration_id" value="7ijugepou1fn8n258h9rmnre2p" description="" />
+  <keyValuePair key="route_design" value="NA" description="" />
+  <keyValuePair key="target_device" value="NA" description="" />
+  <keyValuePair key="target_family" value="NA" description="" />
+  <keyValuePair key="target_package" value="NA" description="" />
+  <keyValuePair key="target_speed" value="NA" description="" />
+  <keyValuePair key="tool_flow" value="SDK" description="" />
+ </section>
+ <section name="user_environment" level="1" order="2" description="">
+  <keyValuePair key="cpu_name" value="12th Gen Intel(R) Core(TM) i7-12700H" description="" />
+  <keyValuePair key="cpu_speed" value="2688 MHz" description="" />
+  <keyValuePair key="os_name" value="Microsoft Windows 8 or later , 64-bit" description="" />
+  <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
+  <keyValuePair key="system_ram" value="34.072 GB" description="" />
+  <keyValuePair key="total_processors" value="1" description="" />
+ </section>
+ <section name="sdk" level="1" order="3" description="">
+  <section name="application/1668820753291" level="2" order="1" description="">
+   <keyValuePair key="apptemplate" value="zynq_fsbl" description="" />
+   <keyValuePair key="bspid" value="1668820748309" description="" />
+   <keyValuePair key="hwid" value="1668657757949" description="" />
+   <keyValuePair key="langused" value="C" description="" />
+   <keyValuePair key="newbsp" value="true" description="" />
+   <keyValuePair key="os" value="standalone" description="" />
+   <keyValuePair key="procused" value="ps7_cortexa9" description="" />
+   <keyValuePair key="projsize" value="601.421875" description="" />
+   <keyValuePair key="recordtype" value="APPCreation" description="" />
+   <keyValuePair key="uid" value="1668820753291" description="" />
+  </section>
+  <section name="bsp/1668820748309" level="2" order="2" description="">
+   <keyValuePair key="apptemplate" value="zynq_fsbl" description="" />
+   <keyValuePair key="hwid" value="1668657757949" description="" />
+   <keyValuePair key="os" value="standalone" description="" />
+   <keyValuePair key="recordtype" value="BSPCreation" description="" />
+   <keyValuePair key="uid" value="1668820748309" description="" />
+  </section>
+  <section name="bsp/1668828825309" level="2" order="3" description="">
+   <keyValuePair key="bootgencount" value="1" description="" />
+   <keyValuePair key="crosstriggcount" value="0" description="" />
+   <keyValuePair key="debugcount" value="10" description="" />
+   <keyValuePair key="flashcount" value="0" description="" />
+   <keyValuePair key="perfcount" value="0" description="" />
+   <keyValuePair key="qemudebugcount" value="0" description="" />
+   <keyValuePair key="recordtype" value="ToolUsage" description="" />
+   <keyValuePair key="uid" value="NA" description="" />
+  </section>
+ </section>
+ <section name="vivado_usage" level="1" order="4" description="">
+ </section>
+</section>
+</webTalkData>

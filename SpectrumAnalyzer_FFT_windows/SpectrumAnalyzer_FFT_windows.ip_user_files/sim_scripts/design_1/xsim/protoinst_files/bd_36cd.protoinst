@@ -1,0 +1,50 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_36cd": {
+			"proto_instances": {
+				"/g_inst/slot_0_axi": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARADDR": { "actual": "slot_0_axi_araddr"},
+						"ARESETN": { "actual": "aresetn"},
+						"ARLEN": { "actual": "slot_0_axi_arlen"},
+						"ARREADY": { "actual": "slot_0_axi_arready"},
+						"ARSIZE": { "actual": "slot_0_axi_arsize"},
+						"ARVALID": { "actual": "slot_0_axi_arvalid"},
+						"AWADDR": { "actual": "slot_0_axi_awaddr"},
+						"AWLEN": { "actual": "slot_0_axi_awlen"},
+						"AWREADY": { "actual": "slot_0_axi_awready"},
+						"AWSIZE": { "actual": "slot_0_axi_awsize"},
+						"AWVALID": { "actual": "slot_0_axi_awvalid"},
+						"BREADY": { "actual": "slot_0_axi_bready"},
+						"BRESP": { "actual": "slot_0_axi_bresp"},
+						"BVALID": { "actual": "slot_0_axi_bvalid"},
+						"RDATA": { "actual": "slot_0_axi_rdata"},
+						"RLAST": { "actual": "slot_0_axi_rlast"},
+						"RREADY": { "actual": "slot_0_axi_rready"},
+						"RVALID": { "actual": "slot_0_axi_rvalid"},
+						"WDATA": { "actual": "slot_0_axi_wdata"},
+						"WLAST": { "actual": "slot_0_axi_wlast"},
+						"WREADY": { "actual": "slot_0_axi_wready"},
+						"WSTRB": { "actual": "slot_0_axi_wstrb"},
+						"WVALID": { "actual": "slot_0_axi_wvalid"}
+					}
+				},
+				"/g_inst/slot_1_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "slot_1_axis_tdata"},
+						"TKEEP": { "actual": "slot_1_axis_tkeep"},
+						"TLAST": { "actual": "slot_1_axis_tlast"},
+						"TREADY": { "actual": "slot_1_axis_tready"},
+						"TVALID": { "actual": "slot_1_axis_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}
